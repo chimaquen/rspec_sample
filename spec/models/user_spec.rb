@@ -12,12 +12,12 @@ RSpec.describe User, type: :model do
     end
     it "年齢15：ユーザーの名前が取得できること" do
       params.merge!(age: 15)
-      user = User.new(params2)
+      user = User.new(params)
       expect(user.disp_name).to eq "satou君"
     end
     it "年齢20：ユーザーの名前が取得できること" do
       params.merge!(age: 20)
-      user = User.new(params3)
+      user = User.new(params)
       expect(user.disp_name).to eq "satouさん"
     end
   end
